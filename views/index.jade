@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p= description
+
+  br
+  
+  form(method='POST', action='upload', enctype='multipart/form-data')
+    input(type='file', name='csv')
+    input(type='submit')
